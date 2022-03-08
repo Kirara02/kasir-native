@@ -1,0 +1,141 @@
+:root {
+    --main-color: rgb(245, 52, 255);
+    --main-color-50: rgba(245, 52, 255, 0.7);
+}
+
+.nav {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav .insert {
+}
+
+.nav .insert a button, .nav .search button {
+    width: 150px;
+    height: 50px;
+    background-color: var(--main-color);
+    border: 0;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: white;
+    cursor: pointer;
+}
+
+.nav .search {
+    position: relative;
+}
+
+
+.nav .search i {
+    position: absolute;
+    height: 100%;
+    width: 50px;
+    background-color: var(--main-color);
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    border-radius: 6px 0 0 6px;
+    color: white;
+}
+
+.nav .search input {
+    width: 500px;
+    height: 20px;
+    outline: none;
+    transition: all 0.5s ease;
+    border-radius: 6px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    padding: 12px;
+    padding-left: 55px;
+    font-size: 1.25rem;
+
+}
+
+.nav .search input:focus {
+    border: 1px solid rgba(0, 0, 0, 0);
+    box-shadow: 0 0 3px 1px rgb(245, 52, 255);
+}
+
+.nav .search button {
+    display: none;
+}
+table {
+    width: 100%;
+    margin: 12px 0;
+}
+
+table tbody tr {
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+table tbody tr td img {
+    width: 200px;
+}
+
+table tbody tr:nth-child(odd) {
+    background-color: var(--main-color-50);
+    color: white;
+}
+
+table tbody tr td .aksi {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+table tbody tr td .aksi a button {
+    outline: none;
+    border: 0;
+    width: 100px;
+    margin: 12px 0;
+    padding: 12px;
+    border-radius: 6px;
+    color: white;
+    text-decoration: none;
+    font-size: 0.90rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+table tbody tr td .aksi a .edit {
+    background-color: rgb(105, 105, 255);
+}
+
+table tbody tr td .aksi a .delete {
+    background-color: rgb(255, 36, 36);
+}
+
+.prev {
+    outline: none;
+    border: 0;
+    width: 200px;
+    margin: 12px 0;
+    padding: 12px;
+    border-radius: 6px;
+    background-color: var(--main-color);
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+    font-size: 0.90rem;
+    font-weight: 600;
+}
+
+@media screen and (max-width: 786px) {
+    .nav {
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,49 @@
+:root {
+    --main-color: rgb(245, 52, 255);
+    --main-color-50: rgba(245, 52, 255, 0.7);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.konten{
+    display: flex;
+    margin-left:17%;
+}
+.konten .insert a button {
+    width: 120px;
+    height: 30px;
+    background-color: var(--main-color);
+    border: 0;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: white;
+    cursor: pointer;
+    margin-left:50px ;
+    margin-top: 15%;
+}
+.log {
+    text-align: center;
+}
+.log .prev {
+    outline: none;
+    border: 0;
+    width: 200px;
+    margin: 12px 0;
+    padding: 12px;
+    border-radius: 6px;
+    background-color: var(--main-color);
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+    font-size: 0.90rem;
+    font-weight: 600;
+    margin-top: 3%;
+}

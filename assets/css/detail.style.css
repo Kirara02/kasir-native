@@ -1,0 +1,135 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+:root {
+    --main-color: rgb(245, 52, 255);
+    --main-color-50: rgba(245, 52, 255, 0.7);
+}
+table{
+    display: flex;
+}
+.nav {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 2%;
+    margin-top: 1%;
+}
+.nav .search {
+    position: relative;
+}
+
+
+.nav .search i {
+    position: absolute;
+    height: 100%;
+    width: 50px;
+    background-color: var(--main-color);
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    border-radius: 6px 0 0 6px;
+    color: white;
+}
+
+.nav .search input {
+    width: 500px;
+    height: 30px;
+    outline: none;
+    transition: all 0.5s ease;
+    border-radius: 6px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    padding: 12px;
+    padding-left: 55px;
+    font-size: 1.5rem;
+
+}
+.list-barang{
+    margin-top: 1%;
+    margin-left: 2%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    position: relative;
+    width: 700px;
+    padding: 30px;
+    border: 2px solid;
+    border-color: var(--main-color);
+    overflow: auto;
+    height: 500px;
+}.beli{
+    height: 250px;  
+}.konten{
+    position: absolute;
+}.daftar{
+    margin-left: 60%;
+    margin-top: 40px;
+}.info-cos{
+    margin-left: 60%;
+}
+
+.log .prev {
+    outline: none;
+    border: 0;
+    width: 150px;
+    margin: 12px 0;
+    padding: 12px;
+    border-radius: 6px;
+    background-color: var(--main-color);
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+    font-size: 0.90rem;
+    font-weight: 600;
+    margin-top: 3%;
+}
+.beli .btn-beli .prev {
+    outline: none;
+    border: 0;
+    width: 40px;
+    margin: 6px 0;
+    padding: 6px;
+    border-radius: 6px;
+    background-color: var(--main-color);
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+    font-size: 0.90rem;
+    font-weight: 100;
+    margin-left: -90px;
+}
+
+.jml-beli input {
+    width: 80px;
+    margin-top: 9px;
+    height: 23px;
+    margin-left: 25px;
+}
+
+.box-beli {
+    width: 175px;
+    text-align: center;
+}
+
+.bayar {
+    outline: none;
+    border: 0;
+    width: 50px;
+    margin: 4px 0;
+    padding: 4px;
+    border-radius: 6px;
+    background-color: var(--main-color);
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+    font-size: 0.90rem;
+    font-weight: 100;
+} 
+.nav .search form button {
+    display: none;
+}
